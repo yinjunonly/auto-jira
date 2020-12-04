@@ -1,0 +1,31 @@
+<configuration>
+    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+		<appender name="File"	class="ch.qos.logback.core.rolling.RollingFileAppender">
+				<file>logs/auto-jira-rest.log</file>
+				<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+						<FileNamePattern>logs/auto-jira-rest-%d{yyyy-MM-dd}.%i.log</FileNamePattern>
+						<MaxHistory>1</MaxHistory>
+						<TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+							<MaxFileSize>700MB</MaxFileSize>
+						</TimeBasedFileNamingAndTriggeringPolicy>
+				</rollingPolicy>
+				<encoder>
+						<pattern>[ %-5level] [%date{yyyy-MM-dd HH:mm:ss}] %logger [%line] - %msg%n</pattern>
+                        <charset>UTF-8</charset> 
+				</encoder>
+		</appender>
+	
+		<appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+				<encoder>
+						<pattern>[ %-5level] [%date{yyyy-MM-dd HH:mm:ss}] %logger [%line] - %msg%n</pattern>
+                        <charset>UTF-8</charset> 
+				</encoder>
+		</appender>
+		
+		<logger name="in.auto.jira" level="info" additivity="true" />
+		
+		<root level="INFO">
+				<appender-ref ref="File" />
+				<appender-ref ref="Console" />
+		</root>
+</configuration>

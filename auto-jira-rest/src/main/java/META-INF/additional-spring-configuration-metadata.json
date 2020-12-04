@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "rest.session-timeout",
+  "type": "java.lang.Integer",
+  "description": "session过期时间，默认30分钟"
+}]}

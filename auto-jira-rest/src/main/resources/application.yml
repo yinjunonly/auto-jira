@@ -1,0 +1,36 @@
+server:
+  port: 9081
+  tomcat:
+    max-threads: 1000
+    accept-count: 1000
+
+spring:
+  application:
+    name: auto-jira-rest
+  jackson:
+    time-zone: GMT+8  
+    serialization: 
+      write-dates-as-timestamps: true
+  mvc:
+    date-format: yyyy-MM-dd
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: debug
+rest:
+  mixin-front: true
+  defaultPage: index.html
+  session-timeout: 30  
+okhttp:
+  connect-timeout: 20
+  read-timeout: 20
+  retry-on-connection-failure:  true
+  connection-pool:
+    keep-alive-duration:  60
+    max-idle-connections: 200
+jira:
+  domain: https://jira.connext.com.cn
+  apis:
+    login: /login.jsp  
+    getIssueParams: /secure/QuickCreateIssue!default.jspa?decorator=none
+    createIssue: /secure/QuickCreateIssue.jspa?decorator=none
+    logWork: /xx/xx

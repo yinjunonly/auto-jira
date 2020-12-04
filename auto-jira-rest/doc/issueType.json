@@ -1,0 +1,473 @@
+[
+    {
+        "label": "15902",
+        "items": [
+            {
+                "label": "故障",
+                "value": "1",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15603&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "新功能",
+                "value": "2",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15611&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Test",
+                "value": "14",
+                "icon": "https://jira.connext.com.cn/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+                "selected": false
+            },
+            {
+                "label": "改进",
+                "value": "4",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15610&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Epic",
+                "value": "6",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15607&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "12402",
+        "items": [
+            {
+                "label": "请选择......",
+                "value": "",
+                "icon": null,
+                "selected": false
+            },
+            {
+                "label": "CS Internal Request",
+                "value": "10601",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "12407",
+        "items": [
+            {
+                "label": "请选择......",
+                "value": "",
+                "icon": null,
+                "selected": false
+            },
+            {
+                "label": "CS Presales Request",
+                "value": "10603",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "15542",
+        "items": [
+            {
+                "label": "故障",
+                "value": "1",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15603&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "新功能",
+                "value": "2",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15611&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Test",
+                "value": "14",
+                "icon": "https://jira.connext.com.cn/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+                "selected": false
+            },
+            {
+                "label": "改进",
+                "value": "4",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15610&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Epic",
+                "value": "6",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15607&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "13405",
+        "items": [
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "故事",
+                "value": "7",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15615&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Clarification",
+                "value": "10100",
+                "icon": "https://jira.connext.com.cn/images/icons/issuetypes/documentation.png",
+                "selected": false
+            },
+            {
+                "label": "Risk",
+                "value": "10807",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "故障",
+                "value": "1",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15603&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Epic",
+                "value": "6",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15607&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "13403",
+        "items": [
+            {
+                "label": "Epic",
+                "value": "6",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15607&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "故事",
+                "value": "7",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15615&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Issue",
+                "value": "12",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "CS Project Incident",
+                "value": "10700",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "CS Project Request",
+                "value": "10604",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": true
+            },
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "15544",
+        "items": [
+            {
+                "label": "故障",
+                "value": "1",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15603&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "新功能",
+                "value": "2",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15611&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Test",
+                "value": "14",
+                "icon": "https://jira.connext.com.cn/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+                "selected": false
+            },
+            {
+                "label": "改进",
+                "value": "4",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15610&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Epic",
+                "value": "6",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15607&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "15705",
+        "items": [
+            {
+                "label": "服务请求",
+                "value": "13",
+                "icon": "https://jira.connext.com.cn/images/icons/issuetypes/undefined.png",
+                "selected": false
+            },
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "15536",
+        "items": [
+            {
+                "label": "故障",
+                "value": "1",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15603&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "新功能",
+                "value": "2",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15611&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Test",
+                "value": "14",
+                "icon": "https://jira.connext.com.cn/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+                "selected": false
+            },
+            {
+                "label": "改进",
+                "value": "4",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15610&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Epic",
+                "value": "6",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15607&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "15007",
+        "items": [
+            {
+                "label": "故障",
+                "value": "1",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15603&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "新功能",
+                "value": "2",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15611&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Test",
+                "value": "14",
+                "icon": "https://jira.connext.com.cn/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+                "selected": false
+            },
+            {
+                "label": "改进",
+                "value": "4",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15610&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Epic",
+                "value": "6",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15607&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "13300",
+        "items": [
+            {
+                "label": "故障",
+                "value": "1",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15603&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Epic",
+                "value": "6",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15607&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "故事",
+                "value": "7",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15615&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Risk",
+                "value": "10807",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Clarification",
+                "value": "10100",
+                "icon": "https://jira.connext.com.cn/images/icons/issuetypes/documentation.png",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "12408",
+        "items": [
+            {
+                "label": "CS Project Incident",
+                "value": "10700",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "CS Project Request",
+                "value": "10604",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": true
+            }
+        ]
+    },
+    {
+        "label": "12406",
+        "items": [
+            {
+                "label": "请选择......",
+                "value": "",
+                "icon": null,
+                "selected": false
+            },
+            {
+                "label": "CS 产品研发 Request",
+                "value": "10605",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "15608",
+        "items": [
+            {
+                "label": "故障",
+                "value": "1",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15603&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "新功能",
+                "value": "2",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15611&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "任务",
+                "value": "3",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15618&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Test",
+                "value": "14",
+                "icon": "https://jira.connext.com.cn/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+                "selected": false
+            },
+            {
+                "label": "改进",
+                "value": "4",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15610&amp;avatarType=issuetype",
+                "selected": false
+            },
+            {
+                "label": "Epic",
+                "value": "6",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15607&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "14312",
+        "items": [
+            {
+                "label": "请选择......",
+                "value": "",
+                "icon": null,
+                "selected": false
+            },
+            {
+                "label": "CS 销售 Request",
+                "value": "11107",
+                "icon": "https://jira.connext.com.cn/secure/viewavatar?size=xsmall&amp;avatarId=15600&amp;avatarType=issuetype",
+                "selected": false
+            }
+        ]
+    }
+]
