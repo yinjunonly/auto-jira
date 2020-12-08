@@ -33,4 +33,4 @@ jira:
     login: /login.jsp  
     getIssueParams: /secure/QuickCreateIssue!default.jspa?decorator=none
     createIssue: /secure/QuickCreateIssue.jspa?decorator=none
-    logWork: /xx/xx
+    logWork: /rest/tempo-timesheets/4/worklogs/

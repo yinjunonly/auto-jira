@@ -1,7 +1,5 @@
 package in.auto.jira.common.domain;
 
-import java.util.Date;
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,10 +12,15 @@ import lombok.Setter;
 @Getter
 @Setter
 public class LogWorkDomain {
-    private String projectName;
-    private String typeName;
-    private String categoryName;
-    private String subCategoryName;
-    private Date logDate;
+    private String projectId;
+    private String issueTypeId;
+    private String atlToken;
+    private String formToken;
+    private String summary;
+    private String categoryId;
+    private String subCategoryId;
+    private String assignee;
+    private String logDate;
     private Integer hours;
+    private String issueId;
 }
