@@ -192,15 +192,19 @@ public class ReptileServiceImpl implements ReptileService {
             Document doc = Jsoup.parse(field.getEditHtml());
             Elements eles = doc.select("#customfield_11709 option");
             for (Element element : eles) {
-                categorys.add(IssueResult.Element.builder().id(element.val()).name(element.text()).build());
-                Elements subs = doc.select("option.option-group-" + element.val() + "");
-                List<IssueResult.Element> values = Lists.newArrayList();
-                for (Element sub : subs) {
-                    if (!sub.val().equals(element.val())) {
-                        values.add(IssueResult.Element.builder().id(sub.val()).name(sub.text()).build());
+                if (!Tools.isNullOrEmpty(element.val())) {
+                    categorys.add(IssueResult.Element.builder().id(element.val()).name(element.text()).build());
+                    Elements subs = doc.select("option.option-group-" + element.val() + "");
+                    List<IssueResult.Element> values = Lists.newArrayList();
+                    for (Element sub : subs) {
+                        if (!sub.val().equals(element.val())) {
+                            if (!Tools.isNullOrEmpty(sub.val())) {
+                                values.add(IssueResult.Element.builder().id(sub.val()).name(sub.text()).build());
+                            }
+                        }
                     }
+                    subCategorys.put(element.val(), values);
                 }
-                subCategorys.put(element.val(), values);
             }
         }
         result.setCategorys(categorys);
@@ -282,6 +286,7 @@ public class ReptileServiceImpl implements ReptileService {
                 .timeSpentSeconds(new Long(logWorkDomain.getHours() * 60 * 60)).includeNonWorkingDays(false)
                 .billableSeconds("").attributes(new Object()).build();
         String json = JSON.toJSONString(params, SerializerFeature.WriteMapNullValue);
+        System.err.println(json);
         String logResult = client.postClient.postByJsonResp2String(this.getReqUrl(config.getApis().getLogWork()), json);
         log.info("log工时返回值：{}", logResult);
     }
