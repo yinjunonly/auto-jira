@@ -30,7 +30,9 @@ import in.auto.jira.common.interfaces.ReptileService;
 import in.auto.jira.common.model.LogWorkReq;
 import in.auto.jira.common.utils.Tools;
 import in.auto.jira.common.utils.okhttp.client.OkHttpSimpleClient;
+import in.auto.jira.common.utils.okhttp.config.OkHttpConfig;
 import lombok.extern.slf4j.Slf4j;
+import okhttp3.OkHttpClient;
 
 /**
  * 爬虫服务实现
@@ -45,20 +47,28 @@ public class ReptileServiceImpl implements ReptileService {
     private OkHttpSimpleClient client;
     @Resource
     private JiraConfig config;
+    @Resource
+    OkHttpConfig okHttpConfig;
 
     // const
-    public static final String NOT_LOGIN_FLAG = "Sorry, your username and password are incorrect - please try again.";
+    public static final String USER_OR_PASSWORD_ERROR_FLAG = "Sorry, your username and password are incorrect - please try again.";
     public static final String PROJECT_FIELD_ID = "project";
     public static final String ISSUE_TYPE_FIELD_ID = "issuetype";
     public static final String CATEGORY_FIELD_ID = "customfield_11709";
     public static final String ASSIGNEE_FIELD_ID = "assignee";
+    public static final Map<String, Boolean> LOGIN_STATUS_FLAG = Maps.newHashMap();
+    public static final Map<String, OkHttpClient> USER_CLIENT_MAP = Maps.newHashMap();
+    // not log const
+    public static final String CREATE_ISSUE_NOT_LOGIN_FLAG = "<h1>XSRF Security Token Missing</h1>";
+    public static final String CREATE_ISSUE_TIMEOUT_LOGIN_FLAG = "<h1>Session Expired</h1>";
+    public static final String QUERY_ISSUE_NOT_LOGIN_ERRMSG = "You are not logged in, and do not have the permissions required to create an issue in this project as a guest.";
+    public static final Integer LOG_WORK_NOT_NOT_CODE = 401;
+    public static final int RETRY_QTY = 3;
 
     @Override
     public IssueResult findQuickParams(String loginName, String password) {
-        // 1.登录
-        this.login(loginName, password);
         // 2.获取创建Issue所需请求参数
-        return this.getIssueParams();
+        return this.getIssueParams(loginName, password, RETRY_QTY);
     }
 
     private void login(String loginName, String password) {
@@ -71,19 +81,35 @@ public class ReptileServiceImpl implements ReptileService {
         // params
         params.put("os_username", loginName);
         params.put("os_password", password);
+        OkHttpClient currentClient = USER_CLIENT_MAP.getOrDefault(loginName, okHttpConfig.okHttpClient());
         String strResult = client.postClient.postByFormDataResp2String(this.getReqUrl(config.getApis().getLogin()),
-                params);
-        if (strResult.contains(NOT_LOGIN_FLAG)) {
+                params, currentClient);
+        if (strResult.contains(USER_OR_PASSWORD_ERROR_FLAG)) {
             throw ErrorCodeExceptionFactory.build("用户名或密码错误，行不行啊？老弟", 999);
         }
+        LOGIN_STATUS_FLAG.put(loginName, true);
     }
 
-    private IssueResult getIssueParams() {
-        IssueResult result = client.postClient
-                .postResp2ObjFromJson(this.getReqUrl(config.getApis().getGetIssueParams()), IssueResult.class);
+    private IssueResult getIssueParams(String loginName, String password, int retryQty) {
+        if (!LOGIN_STATUS_FLAG.getOrDefault(loginName, false)) {
+            this.login(loginName, password);
+        }
+        OkHttpClient currentClient = USER_CLIENT_MAP.getOrDefault(loginName, okHttpConfig.okHttpClient());
+        IssueResult result = client.postClient.postResp2ObjFromJson(
+                this.getReqUrl(config.getApis().getGetIssueParams()), IssueResult.class, currentClient);
         if (!Tools.isNullOrEmpty(result.getErrorMessages())) {
             for (String item : result.getErrorMessages()) {
+                // 未登录
+                if (item.equals(QUERY_ISSUE_NOT_LOGIN_ERRMSG)) {
+                    if (retryQty > 0) {
+                        LOGIN_STATUS_FLAG.put(loginName, false);
+                        this.getIssueParams(loginName, password, --retryQty);
+                    } else {
+                        throw ErrorCodeExceptionFactory.build("自动登录失败（重试了三次仍失败），请检查是否密码是否发生修改！", 702);
+                    }
+                }
                 log.error("爬虫获取Issue参数时错误，错误信息：{}", item);
+                throw ErrorCodeExceptionFactory.build(Tools.fillPlaceholder("获取Issue信息时错误：{}", item), 999);
             }
         }
         // 解析数据
@@ -233,8 +259,8 @@ public class ReptileServiceImpl implements ReptileService {
         List<LogWorkDomain> logWorkDomains = busDomain.getWorks();
         // 循环创建Issue并Log工时
         for (LogWorkDomain logWorkDomain : logWorkDomains) {
-            this.createIssue(logWorkDomain);
-            this.log(logWorkDomain);
+            this.createIssue(busDomain.getLoginName(), logWorkDomain);
+            this.log(busDomain.getLoginName(), logWorkDomain);
         }
     }
 
@@ -244,7 +270,7 @@ public class ReptileServiceImpl implements ReptileService {
      * @param logWorkDomain logWork领域模型
      * @return
      */
-    private IssueResult createIssue(LogWorkDomain logWorkDomain) {
+    private IssueResult createIssue(String loginName, LogWorkDomain logWorkDomain) {
         Map<String, Object> params = Maps.newHashMap();
         // fixed params
         params.put("description", "");
@@ -269,8 +295,9 @@ public class ReptileServiceImpl implements ReptileService {
         params.put("customfield_11709", logWorkDomain.getCategoryId());
         params.put("customfield_11709:1", logWorkDomain.getSubCategoryId());
         params.put("assignee", logWorkDomain.getAssignee());
+        OkHttpClient currentClient = USER_CLIENT_MAP.getOrDefault(loginName, okHttpConfig.okHttpClient());
         IssueResult result = client.postClient.postByFormDataResp2ObjFromJson(
-                this.getReqUrl(config.getApis().getCreateIssue()), params, IssueResult.class);
+                this.getReqUrl(config.getApis().getCreateIssue()), params, IssueResult.class, currentClient);
         logWorkDomain.setIssueId(result.getCreatedIssueDetails().getId());
         return result;
     }
@@ -280,15 +307,30 @@ public class ReptileServiceImpl implements ReptileService {
      * 
      * @param logWorkDomain logWork领域模型
      */
-    private void log(LogWorkDomain logWorkDomain) {
+    private void log(String loginName, LogWorkDomain logWorkDomain) {
         LogWorkReq params = LogWorkReq.builder().worker(logWorkDomain.getAssignee().toLowerCase())
                 .originTaskId(logWorkDomain.getIssueId()).started(logWorkDomain.getLogDate())
                 .timeSpentSeconds(new Long(logWorkDomain.getHours() * 60 * 60)).includeNonWorkingDays(false)
                 .billableSeconds("").attributes(new Object()).build();
         String json = JSON.toJSONString(params, SerializerFeature.WriteMapNullValue);
-        System.err.println(json);
-        String logResult = client.postClient.postByJsonResp2String(this.getReqUrl(config.getApis().getLogWork()), json);
-        log.info("log工时返回值：{}", logResult);
+        try {
+            OkHttpClient currentClient = USER_CLIENT_MAP.getOrDefault(loginName, okHttpConfig.okHttpClient());
+            String logResult = client.postClient.postByJsonResp2String(this.getReqUrl(config.getApis().getLogWork()),
+                    json, currentClient);
+            log.info("log工时返回值：{}", logResult);
+        } catch (Exception e) {
+            log.error(e.getMessage(), e);
+            throw ErrorCodeExceptionFactory.build(Tools.fillPlaceholder("issue创建成功但工时log失败！错误信息：{}", e.getMessage()),
+                    999);
+        }
+    }
+
+    @Override
+    public void logWorkAutomation(BusDomain busDomain) {
+        this.login(busDomain.getLoginName(), busDomain.getPassword());
+        for (LogWorkDomain item : busDomain.getWorks()) {
+            this.log(busDomain.getLoginName(), item);
+        }
     }
 
     /**
@@ -299,13 +341,5 @@ public class ReptileServiceImpl implements ReptileService {
      */
     private String getReqUrl(String apiUrl) {
         return new StringBuilder().append(config.getDomain()).append(apiUrl).toString();
-    }
-
-    @Override
-    public void logWorkAutomation(BusDomain busDomain) {
-        this.login(busDomain.getLoginName(), busDomain.getPassword());
-        for (LogWorkDomain item : busDomain.getWorks()) {
-            this.log(item);
-        }
     }
 }
