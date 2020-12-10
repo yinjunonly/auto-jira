@@ -49,6 +49,10 @@ public class OkHttpConfig {
 	@Bean
 	@ConditionalOnMissingBean(OkHttpClient.class)
 	public OkHttpClient okHttpClient() {
+		return this.newClient();
+	}
+
+	public OkHttpClient newClient() {
 		return new OkHttpClient.Builder().sslSocketFactory(sslSocketFactory(), x509TrustManager())
 				.retryOnConnectionFailure(okHttpProperties.getRetryOnConnectionFailure())// 是否重试失败连接
 				.connectionPool(pool())// 连接池
