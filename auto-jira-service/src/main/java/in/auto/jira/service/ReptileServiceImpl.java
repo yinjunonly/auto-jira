@@ -55,6 +55,8 @@ public class ReptileServiceImpl implements ReptileService {
     public static final String PROJECT_FIELD_ID = "project";
     public static final String ISSUE_TYPE_FIELD_ID = "issuetype";
     public static final String CATEGORY_FIELD_ID = "customfield_11709";
+    // 主线分类编号
+    public static final String BUS_CATEGORY_FIELD_ID = "customfield_11712";
     public static final String ASSIGNEE_FIELD_ID = "assignee";
     public static final Map<String, Boolean> LOGIN_STATUS_FLAG = Maps.newHashMap();
     public static final Map<String, OkHttpClient> USER_CLIENT_MAP = Maps.newHashMap();
@@ -121,6 +123,9 @@ public class ReptileServiceImpl implements ReptileService {
                 this.analysisIssueType(result, field);
             } else if (Objects.equal(field.getId(), CATEGORY_FIELD_ID)) {
                 // 分类&子分类
+                this.analysisCategory(result, field);
+            } else if (Objects.equal(field.getId(), BUS_CATEGORY_FIELD_ID)) {
+                // 主线分类&子分类
                 this.analysisCategory(result, field);
             } else if (Objects.equal(field.getId(), ASSIGNEE_FIELD_ID)) {
                 // 经办人
@@ -212,11 +217,12 @@ public class ReptileServiceImpl implements ReptileService {
      * @param field  分类相关数据信息
      */
     private void analysisCategory(IssueResult result, Field field) {
+        result.setExt(field.getId());
         List<IssueResult.Element> categorys = Lists.newArrayList();
         Map<String, List<IssueResult.Element>> subCategorys = Maps.newHashMap();
         if (!Tools.isNullOrEmpty(field.getEditHtml())) {
             Document doc = Jsoup.parse(field.getEditHtml());
-            Elements eles = doc.select("#customfield_11709 option");
+            Elements eles = doc.select("#" + field.getId() + " option");
             for (Element element : eles) {
                 if (!Tools.isNullOrEmpty(element.val())) {
                     categorys.add(IssueResult.Element.builder().id(element.val()).name(element.text()).build());
@@ -282,7 +288,7 @@ public class ReptileServiceImpl implements ReptileService {
         params.put("fieldsToRetain", "project");
         params.put("fieldsToRetain", "issuetype");
         params.put("fieldsToRetain", "priority");
-        params.put("fieldsToRetain", "customfield_11709");
+        params.put("fieldsToRetain", logWorkDomain.getCategoryType());
         params.put("fieldsToRetain", "assignee");
         params.put("fieldsToRetain", "customfield_11833");
         params.put("fieldsToRetain", "customfield_10800");
@@ -292,8 +298,8 @@ public class ReptileServiceImpl implements ReptileService {
         params.put("atl_token", logWorkDomain.getAtlToken());
         params.put("formToken", logWorkDomain.getFormToken());
         params.put("summary", logWorkDomain.getSummary());
-        params.put("customfield_11709", logWorkDomain.getCategoryId());
-        params.put("customfield_11709:1", logWorkDomain.getSubCategoryId());
+        params.put(logWorkDomain.getCategoryType(), logWorkDomain.getCategoryId());
+        params.put(logWorkDomain.getCategoryType() + ":1", logWorkDomain.getSubCategoryId());
         params.put("assignee", logWorkDomain.getAssignee());
         OkHttpClient currentClient = this.getCurrentClient(loginName);
         IssueResult result = client.postClient.postByFormDataResp2ObjFromJson(

@@ -34,6 +34,7 @@ public class IssueResult {
     private List<Element> categorys;
     private Map<String, List<Element>> subCategorys;
     private String assignee;
+    private String ext;
 
     @Getter
     @Setter

@@ -23,4 +23,5 @@ public class LogWorkDomain {
     private String logDate;
     private Integer hours;
     private String issueId;
+    private String categoryType;
 }

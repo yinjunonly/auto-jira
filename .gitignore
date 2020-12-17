@@ -22,3 +22,4 @@ lib/ip2region.db
 /adds-service/.externalToolBuilders
 slotExtCount.json
 JSExtCount.json
+/src
