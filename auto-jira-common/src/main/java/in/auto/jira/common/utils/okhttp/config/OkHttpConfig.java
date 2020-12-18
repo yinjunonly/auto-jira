@@ -11,7 +11,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
@@ -57,7 +59,13 @@ public class OkHttpConfig {
 				.retryOnConnectionFailure(okHttpProperties.getRetryOnConnectionFailure())// 是否重试失败连接
 				.connectionPool(pool())// 连接池
 				.connectTimeout(okHttpProperties.getConnectTimeout(), TimeUnit.SECONDS)
-				.readTimeout(okHttpProperties.getReadTimeout(), TimeUnit.SECONDS).cookieJar(new CookieJar() {
+				.readTimeout(okHttpProperties.getReadTimeout(), TimeUnit.SECONDS)
+				.hostnameVerifier(new HostnameVerifier() {
+					@Override
+					public boolean verify(String arg0, SSLSession arg1) {
+						return true;
+					}
+				}).cookieJar(new CookieJar() {
 					private final HashMap<String, Set<Cookie>> cookieStore = new HashMap<>();
 
 					@Override
