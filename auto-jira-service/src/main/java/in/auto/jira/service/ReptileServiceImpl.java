@@ -168,7 +168,8 @@ public class ReptileServiceImpl implements ReptileService {
                 JSONArray projectJSONArray = JSON.parseArray(projectNode.attr("data-suggestions"));
                 for (Object object : projectJSONArray) {
                     JSONObject obj = (JSONObject) object;
-                    if (obj.getString("label").equals("所有项目")) {
+                    String lable = obj.getString("label");
+                    if (lable.equals("所有项目") || lable.equals("All Projects")) {
                         JSONArray procjets = obj.getJSONArray("items");
                         for (Object projectObj : procjets) {
                             JSONObject projectJSONObj = (JSONObject) projectObj;

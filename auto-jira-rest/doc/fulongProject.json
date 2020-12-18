@@ -1,0 +1,1008 @@
+[
+    {
+        "label": "Recent Projects",
+        "items": [
+            {
+                "label": "SAP Debian 10 Migration (CTBJJEJEA)",
+                "value": "19965",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": true
+            },
+            {
+                "label": "CMP Project FY20-Phase II (CTBJJGJBB)",
+                "value": "20017",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20017&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "CS-2603-Dev1-SAP (CS2603DEV1)",
+                "value": "18103",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=18103&avatarId=17614",
+                "selected": false
+            },
+            {
+                "label": "Amway ALI Cloud网络自动化 FY20 (CTBJJIJIF)",
+                "value": "20941",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20941&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "DIC 2020 cmp security monitor (CTBJJFBDB)",
+                "value": "19989",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19989&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "cs-2603-dev4-临时任务安排 (CS2603DEV4)",
+                "value": "18218",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            }
+        ]
+    },
+    {
+        "label": "All Projects",
+        "items": [
+            {
+                "label": "20/08-09 阿里云返现 (CTBJAJJGB)",
+                "value": "21008",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21008&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "2021年Swift-China O365采购运维服务 (CTBJABJBF)",
+                "value": "21350",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21350&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "21V-宝马汽车金融售前支持 (CTBJABJFF)",
+                "value": "21417",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21417&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Adidas Ongoing (CTAHJAJGA)",
+                "value": "17345",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17345&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Adidas 存储升级 (CTBJJAJDB)",
+                "value": "19404",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Aetna CHH system MLPS project 2020 (CTBJJBAJA)",
+                "value": "19482",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Aetna Ongoing (CTAFJEJAA)",
+                "value": "17304",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17304&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Alcon 爱尔康中国 Azure资源 (CTBJJGJIB)",
+                "value": "20641",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20641&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Amer Bomgar VPN-2020.4 (CTBJJFJCB)",
+                "value": "19931",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19931&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Amer CSO ITO Service 2019/9/27-2020/9/26 (CTAIAAJDB)",
+                "value": "19114",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Amer Sports Ongoing (CTAIJDJHA)",
+                "value": "18430",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Amer Sports Setup (CTAHAJJEA)",
+                "value": "17504",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17504&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "AMWAY ALI Cloud Support Service -2 Y20 (CTBJJIJEF)",
+                "value": "20811",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20811&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Amway ALI Cloud网络自动化 FY20 (CTBJJIJIF)",
+                "value": "20941",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20941&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Amway CICD 三期 FY20-AWS CICD 功能搭建 (CTBJJFBBA)",
+                "value": "19978",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19978&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Amway CICD 三期 FY20-CICD OPS & Engineering (CTBJJFBAB)",
+                "value": "19977",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19977&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Amway CICD 三期 FY20-阿里云监控+CICD对接 (CTBJJFBJA)",
+                "value": "19976",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19976&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "arvato digital数字证书采购 (CTAIJGJFA)",
+                "value": "18908",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Arvato SSL证书采购二期 (CTBJJCJAB)",
+                "value": "19485",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "AWS POA Funding-宁波三生电商应用系统迁移项目 (CTAIAJJFA)",
+                "value": "19106",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Azure Data & AI返点(2020年4月 - 6月) (CTBJAJJAB)",
+                "value": "20937",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20937&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Azure Data & AI返点2019年10月 - 12月 (CTBJJCJCB)",
+                "value": "19717",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19717&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Azure Data & AI返点2019年10月 - 12月 (CTBJJCJDB)",
+                "value": "19718",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19718&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Azure Rebate 2019Q2（201907-9） (CTAIABJCA)",
+                "value": "19231",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Azure Rebate 2019Q2（201907-9）-Azure Data & AI (CTAIABADA)",
+                "value": "19268",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "BCS Hosting (CTAEAAJFB)",
+                "value": "14451",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=14451&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BCS-ELC CRM Ongoing & MA (CVACJACJC)",
+                "value": "17524",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17524&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Berlitz Ongoing (CTAHJEJEA)",
+                "value": "17358",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17358&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BMW Ongoing (CTAIJCJAA)",
+                "value": "18327",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "BMW Project Resource Supplementation Services -① (CTBJJIJFF)",
+                "value": "20812",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20812&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BMW Project Resource Supplementation Services -② (CTBJJIJGF)",
+                "value": "21307",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21307&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BMW Public Hub- Backlog（2602）-BBA (CTBJJFACB)",
+                "value": "19970",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19970&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BMW Public Hub-Backlog（2602）-NCS (CTBJJFADB)",
+                "value": "19972",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19972&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BMW Public Hub-Cloud Ops Service -BBA (CTBJJFAGB)",
+                "value": "19975",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19975&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BMW Public Hub-consulting Service -BBA (CTBJJFAEB)",
+                "value": "19971",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19971&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BMW Public Hub-consulting Service -NCS (CTBJJFAFB)",
+                "value": "19967",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19967&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BMW public hub-security project-BBA (CTBJAAABF)",
+                "value": "21365",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "BMW Public Hub-项目开发实施 Backlog（2606）-BBA (CTBJJFAIB)",
+                "value": "19968",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19968&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "BMW Public Hub-项目开发维保 Non-Backlog（2602）-BBA (CTBJJFAAB)",
+                "value": "19961",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19961&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Bosch Smart Campus Project-PO4001622788 (CTAIJDJIA)",
+                "value": "19483",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "BOSE Ongoing  (CTAIJDJBB)",
+                "value": "18411",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "BOSE Setup (CTAHABJDA)",
+                "value": "18015",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Carlsberg China Cloud Managed Service FY21 (CTBJABJDB)",
+                "value": "21364",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21364&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Carlsberg China Cloud Managed Service-Platform Build Up (CTBJABJCD)",
+                "value": "21362",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21362&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "CMP Project FY20-Phase II (CTBJJGJBB)",
+                "value": "20017",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20017&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "CS Internal (CSIN)",
+                "value": "17388",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17388&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "CS MSP 资质申请 (CIBJJBJAB)",
+                "value": "19436",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "CS OMC&DC成本分摊 (CABJJBJAB)",
+                "value": "19459",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "CS 产品研发 (CIBJJBADB)",
+                "value": "19460",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "CS-2603-Dev1-SAP (CS2603DEV1)",
+                "value": "18103",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=18103&avatarId=17614",
+                "selected": false
+            },
+            {
+                "label": "CS-2603-Dev2-主线研发 (CS2603DEV2)",
+                "value": "18104",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "CS-2603-Dev3-宝洁项目 (CS2603DEV3)",
+                "value": "18110",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "cs-2603-dev4-临时任务安排 (CS2603DEV4)",
+                "value": "18218",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "CS-2603-Dev5-欧莱雅 (CS2603DEV5)",
+                "value": "18516",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "CS-2603-Dev6-CMPbug跟踪 (CS2603DEV6)",
+                "value": "18618",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "DIC 2020 cmp security monitor (CTBJJFBDB)",
+                "value": "19989",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19989&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "DIC 2020 DIC IT Optimization Project (CTBJJFJBA)",
+                "value": "19979",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19979&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "DIC 2020 DIC IT Optimization Project-MA (CTBJJHJBB)",
+                "value": "20717",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20717&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "DIC O365 MA 2020 上半年-安全项目 (CTBJJCJBB)",
+                "value": "19492",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "DIC Ongoing (CTAGABAAA)",
+                "value": "17336",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17336&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "eBay公有云 Ongoing (CTAIJDJCB)",
+                "value": "18415",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "eBay私有云 Ongoing (CTAIJDJGB)",
+                "value": "18429",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "ELC阿里云 运维（信息转包盘云） (CTBJJIJDF)",
+                "value": "20792",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20792&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Farfetch azure 迁移 funding (CTBJJIJCB)",
+                "value": "20794",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20794&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "FCA Ongoing (CTAHJFJBA)",
+                "value": "17359",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17359&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Ferrero Azure CDP 2020-setup (CTBJAAJBE)",
+                "value": "21214",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21214&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Ferrero CSL Consulting & MLPS Evaluation Support Service-7211000564 (CTAIJIJAA)",
+                "value": "18965",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Ferrero Ongoing (CTAHAJJGA)",
+                "value": "18109",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "FTSS Ongoing (CIAGJAJAB)",
+                "value": "17527",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17527&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "FY20 CMP Service 2602 (CTBJJFBHB)",
+                "value": "19988",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19988&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "GSK Azure Plaftform MA 2020 (CTBJJBJFB)",
+                "value": "19457",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "GSK MLPS Evaluation Project  Setup 2020 (CTBJAJJEE)",
+                "value": "21003",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21003&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "GSK MLPS Evaluation Project MA 2020 (CTBJAJJFE)",
+                "value": "21007",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21007&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "HR Operation Center (HROC)",
+                "value": "21106",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "HSBC 佛山数据中心ITO外包 (CIAGABADB)",
+                "value": "19424",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Infosys Ongoing (CTAHJDJDA)",
+                "value": "17354",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17354&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "ITC公司网络内部支持 (CIAIJHJBB)",
+                "value": "18935",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "JDE Ongoing (CTAGABJCA)",
+                "value": "17334",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17334&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Karl Storz Ongoing (CTAHAJABA)",
+                "value": "18206",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=18206&avatarId=11100",
+                "selected": false
+            },
+            {
+                "label": "Karl Storz Setup (CTAIJAJFA)",
+                "value": "18203",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=18203&avatarId=11100",
+                "selected": false
+            },
+            {
+                "label": "Karl Storz机房搬迁2020 (CTBJJGJAB)",
+                "value": "20013",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20013&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "KUKA机器人制造多媒体会议系统项目 (COAIABJBB)",
+                "value": "19426",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "LG OMS 一期Infra2020 (CTBJJFABF)",
+                "value": "19992",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19992&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "LG SD-WAN安全互联2020-MA (CTBJJFJEB)",
+                "value": "19938",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "LG 等保安全加固项目2020 (CTBJJEJFB)",
+                "value": "19936",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "LG乐金电子（中国）有限公司CSL咨询和等保测评 (CTAIABAIA)",
+                "value": "19278",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Loreal 项目助理人员外包 (CTBJJAJAB)",
+                "value": "19400",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "LVMH Ongoing (CTAGABAFA)",
+                "value": "17340",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17340&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "MDLZ CDP Project Aliyun Hosting Services-2019+2020 (CTAIABACB)",
+                "value": "19258",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "MDLZ Ongoing (CTAHJAJAA)",
+                "value": "17341",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17341&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "mer IT Operations Infrastructure Manager APAC (CTAIJHJEB)",
+                "value": "18959",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Nara Logics Ongoing (CTAGJEJCA)",
+                "value": "17314",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17314&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "OMC Support FY1920 (CTBJJFBIB)",
+                "value": "19986",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19986&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "P&G Ongoig Service FY2021-CM Tool Hosting Service (CTBJJFCJB)",
+                "value": "19987",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19987&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "P&G StackStorm Automation Development and Integration FY20 (CTBJJDJBA)",
+                "value": "19835",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19835&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Pancloud 2600 BD (CIBJJBAEB)",
+                "value": "19458",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Pancloud Presales 2602 (Product Implement) (CIBJJBJEB)",
+                "value": "19446",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Pancloud Presales 2605(South Delivery) (CIBJJBJFB)",
+                "value": "19438",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Pancloud Presales 2606(North Delivery) (CIBJJBJGB)",
+                "value": "19447",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Pancloud Presales 2607(East Delivery 1) (CIBJJIJAF)",
+                "value": "20813",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20813&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "Pancloud Presales 2608(East Delivery 2) (CIBJJBJHB)",
+                "value": "19442",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Pancloud Presales 2609(East Delivery 3) (CIBJJBJIB)",
+                "value": "19441",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Pancloud Presales 2691(Cloud Security) (CIBJJBAAB)",
+                "value": "19445",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "PG SDC Oracle Database Upgrade (CTBJJFJFB)",
+                "value": "19959",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19959&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "PTGP Ongoing (CTAHABJCA)",
+                "value": "17813",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "REXEL ITO Service 2019.1.19-2020.1.18 (COAHJAJAB)",
+                "value": "19425",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Rexel Ongoing (CTAHJBJCA)",
+                "value": "17347",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17347&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "RHQ ERP Server 租赁 CS (COAHJGJAB)",
+                "value": "18911",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "SAP Debian 10 Migration (CTBJJEJEA)",
+                "value": "19965",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": true
+            },
+            {
+                "label": "SAP Debian 10_CMP Develop (CTBJJFJIA)",
+                "value": "19963",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "SAP Debian 10_CMP License (CTBJJFJHB)",
+                "value": "19962",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "SAP Debian 10_CMP POC (CTBJJFAJA)",
+                "value": "19964",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "SAP ITO项目-Onsite PM Service-XU XIAORAN (CTBJJAJCB)",
+                "value": "19414",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "SAP V1 平台基础架构运维  2020年 (CTAIJAJEB)",
+                "value": "18106",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "sisley官网等保setup项目 (CTBJJGJDA)",
+                "value": "20207",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20207&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "solution-001 (SOL001)",
+                "value": "18912",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "solution-002 (SOL002)",
+                "value": "18913",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "solution-003 (SOL003)",
+                "value": "18914",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "Suning Ongoing (CTAHAJJHA)",
+                "value": "18323",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "ZIPPO太仓工厂理线项目 (COAIABJCB)",
+                "value": "19269",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "【信息转包盘云】P&G Setup Service-eWMS LG DR Setup (CTBJJHJFA)",
+                "value": "20713",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20713&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "【信息转包盘云】微软ECIF- 数据培训服务 (CTBJJGJEB)",
+                "value": "20643",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20643&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "【敏捷小组项目】P&G EWMS Hosting Service HP For FY1920-① (CTAIAAJCA)",
+                "value": "19115",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "上汽 Ongoing (CTAHABJGB)",
+                "value": "18010",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "上汽-Aiops 自动化运维平台II期 (CTAIABJIB)",
+                "value": "19249",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "上汽-AIOps自动化运维平台I期 (CTAIABJFB)",
+                "value": "19250",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "上汽-APM 服务链监控 (CTAIABJGB)",
+                "value": "19244",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "中企网络 Ongoing (CTACJDJCA)",
+                "value": "17301",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17301&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "优耐德合肥工厂弱电&机房改造项目 (COAIJBJAA)",
+                "value": "18204",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "优耐德淮北工厂弱电相关系统集成一期项目 (COAIJHJAA)",
+                "value": "18939",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "凯德中国公有云基础架构管理服务-ongoing MA (CTAIABAFB)",
+                "value": "19275",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "剑桥大金空调维修项目 (COAIAJJBA)",
+                "value": "19111",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "剑桥江月路&陈行路机房续保（全包）-2019 (COAIJEJBB)",
+                "value": "18505",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "剑桥江月路2F模块化产线弱电项目 (COAIABJAB)",
+                "value": "19252",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "华勤-数据中心迁移项目-平台运维-Ongoing (CTBJAAJFF)",
+                "value": "21308",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21308&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "华勤-数据中心迁移项目-平台运维-Ongoing-2609 (CTBJAAJGF)",
+                "value": "21314",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "华勤数据中心迁移项目-混合云环境搭建及CMP产品-Setup (CTBJAAAAE)",
+                "value": "21311",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21311&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "华勤数据中心迁移项目-混合云环境搭建及CMP产品-Setup-2609 (CTBJAAAJE)",
+                "value": "21324",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "华勤数据中心项目-应用迁移-Setup (CTBJAAJHE)",
+                "value": "21309",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21309&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "华勤数据中心项目-应用迁移-Setup-2609 (CTBJAAJIE)",
+                "value": "21312",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21312&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "华勤混合云环境搭建及应用迁移-CMP搭建-Setup (CTBJAAJEE)",
+                "value": "21310",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=21310&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "周生生企业微信导购及微信小商城一次性实施 (CTAIABJDA)",
+                "value": "19241",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "味全azure资源采购-三年合同 (CTBJJBJDB)",
+                "value": "19456",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "广汇 Ongoing (CTAHJBJEA)",
+                "value": "17349",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17349&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "库卡机器人IT基础设施及网络设备维保-2019 (COAHAAJBB)",
+                "value": "17717",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "微软ECIF- 数据培训服务 (CTBJJGJCB)",
+                "value": "20106",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20106&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "微软返点-202007-202008 (CTBJAJJDB)",
+                "value": "20945",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20945&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "德祥物流（集团）信息中心建设项目 (COAHJDJAA)",
+                "value": "16031",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=16031&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "戴德梁行 Ongoing (CTAIJDJEB)",
+                "value": "18420",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "报废电子电器产品收集处理-上海暹诺 (CTAIJGJCA)",
+                "value": "18824",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "欧莱雅2020年Devops 运维 (CTBJJAJEB)",
+                "value": "19411",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "欧莱雅KSL销售大屏 2020 (CTBJAJJCA)",
+                "value": "20942",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20942&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "欧莱雅Lancome销售大屏 2020 (CTBJAJJBA)",
+                "value": "20943",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20943&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "沃勤型钢 Ongoing (CTAHJHJAB)",
+                "value": "17371",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17371&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "浦发硅谷深圳分行机房维护项目 (COAIJEJCA)",
+                "value": "18507",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "英威达青浦工厂WIFI实施项目 (COAIJHJBA)",
+                "value": "18941",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            },
+            {
+                "label": "资生堂IPSA Ongoing (CEAHJEBEB)",
+                "value": "17525",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=17525&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "重庆凯德 Azure云服务 2020 (CTBJJDJAB)",
+                "value": "19800",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=19800&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "雅诗兰黛服务器增加扩容（信息转包盘云） (CTBJJHJIB)",
+                "value": "20737",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&pid=20737&avatarId=10011",
+                "selected": false
+            },
+            {
+                "label": "震旦 Aurora CSL & MPLS Project 2019-第二部分 等保测评支持服务 (CTAIJGJEA)",
+                "value": "18922",
+                "icon": "https://jira.connext.com.cn/secure/projectavatar?size=xsmall&avatarId=15624",
+                "selected": false
+            }
+        ]
+    }
+]
