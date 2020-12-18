@@ -25,6 +25,7 @@ import in.auto.jira.common.domain.BusDomain;
 import in.auto.jira.common.domain.IssueResult;
 import in.auto.jira.common.domain.LogWorkDomain;
 import in.auto.jira.common.domain.IssueResult.Field;
+import in.auto.jira.common.exceptions.ErrorCodeException;
 import in.auto.jira.common.exceptions.ErrorCodeExceptionFactory;
 import in.auto.jira.common.interfaces.ReptileService;
 import in.auto.jira.common.model.LogWorkReq;
@@ -97,8 +98,23 @@ public class ReptileServiceImpl implements ReptileService {
             this.login(loginName, password);
         }
         OkHttpClient currentClient = this.getCurrentClient(loginName);
-        IssueResult result = client.postClient.postResp2ObjFromJson(
-                this.getReqUrl(config.getApis().getGetIssueParams()), IssueResult.class, currentClient);
+        IssueResult result = null;
+        try {
+            result = client.postClient.postResp2ObjFromJson(this.getReqUrl(config.getApis().getGetIssueParams()),
+                    IssueResult.class, currentClient);
+        } catch (ErrorCodeException e) {
+            // 未登录
+            if (Objects.equal(e.getErrorCode().getStatus(), LOG_WORK_NOT_NOT_CODE)) {
+                if (retryQty > 0) {
+                    LOGIN_STATUS_FLAG.put(loginName, false);
+                    this.getIssueParams(loginName, password, --retryQty);
+                } else {
+                    throw ErrorCodeExceptionFactory.build("自动登录失败（重试了三次仍失败），请检查是否密码是否发生修改！", 702);
+                }
+            } else {
+                throw e;
+            }
+        }
         if (!Tools.isNullOrEmpty(result.getErrorMessages())) {
             for (String item : result.getErrorMessages()) {
                 // 未登录

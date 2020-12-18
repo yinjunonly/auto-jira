@@ -63,7 +63,9 @@ public class HttpClientUtils {
 					throw ErrorCodeExceptionFactory.build(OkHttpErrorcode.RESP_IO_ERROR);
 				}
 			} else {
-				throw ErrorCodeExceptionFactory.build(Tools.fillPlaceholder(OkHttpErrorcode.RESP_STATUS_ERROR.getMessage(), response.code()),999);
+				throw ErrorCodeExceptionFactory.build(
+						Tools.fillPlaceholder(OkHttpErrorcode.RESP_STATUS_ERROR.getMessage(), response.code()),
+						response.code());
 			}
 		} finally {
 			response.close();
