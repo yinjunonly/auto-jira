@@ -107,7 +107,7 @@ public class ReptileServiceImpl implements ReptileService {
             if (Objects.equal(e.getErrorCode().getStatus(), LOG_WORK_NOT_NOT_CODE)) {
                 if (retryQty > 0) {
                     LOGIN_STATUS_FLAG.put(loginName, false);
-                    this.getIssueParams(loginName, password, --retryQty);
+                    return this.getIssueParams(loginName, password, --retryQty);
                 } else {
                     throw ErrorCodeExceptionFactory.build("自动登录失败（重试了三次仍失败），请检查是否密码是否发生修改！", 702);
                 }

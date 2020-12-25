@@ -28,7 +28,7 @@ okhttp:
     keep-alive-duration:  60
     max-idle-connections: 200
 jira:
-  domain: https://jira.connext.com.cn
+  domain: https://jira.lianwei.com.cn
   apis:
     login: /login.jsp  
     getIssueParams: /secure/QuickCreateIssue!default.jspa?decorator=none
