@@ -215,8 +215,13 @@ public class ReptileServiceImpl implements ReptileService {
                             List<IssueResult.Element> issueList = Lists.newArrayList();
                             for (Object item : issues) {
                                 JSONObject issue = (JSONObject) item;
-                                issueList.add(IssueResult.Element.builder().id(issue.getString("value"))
-                                        .name(issue.getString("label")).build());
+                                // 请选择......
+                                String label = issue.getString("label");
+                                if (!"请选择......".equals(label)) {
+                                    issueList.add(IssueResult.Element.builder().id(issue.getString("value")).name(label)
+                                            .build());
+                                }
+
                             }
                             issueTypes.put(project.getId(), issueList);
                         }
