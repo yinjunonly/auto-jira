@@ -84,7 +84,7 @@ public class ReptileServiceImpl implements ReptileService {
         // params
         params.put("os_username", loginName);
         params.put("os_password", password);
-        OkHttpClient currentClient = this.getCurrentClient(loginName);
+        OkHttpClient currentClient = this.getCurrentClient(loginName, true);
         String strResult = client.postClient.postByFormDataResp2String(this.getReqUrl(config.getApis().getLogin()),
                 params, currentClient);
         if (strResult.contains(USER_OR_PASSWORD_ERROR_FLAG)) {
@@ -97,7 +97,7 @@ public class ReptileServiceImpl implements ReptileService {
         if (!LOGIN_STATUS_FLAG.getOrDefault(loginName, false)) {
             this.login(loginName, password);
         }
-        OkHttpClient currentClient = this.getCurrentClient(loginName);
+        OkHttpClient currentClient = this.getCurrentClient(loginName, false);
         IssueResult result = null;
         try {
             result = client.postClient.postResp2ObjFromJson(this.getReqUrl(config.getApis().getGetIssueParams()),
@@ -318,7 +318,7 @@ public class ReptileServiceImpl implements ReptileService {
         params.put(logWorkDomain.getCategoryType(), logWorkDomain.getCategoryId());
         params.put(logWorkDomain.getCategoryType() + ":1", logWorkDomain.getSubCategoryId());
         params.put("assignee", logWorkDomain.getAssignee());
-        OkHttpClient currentClient = this.getCurrentClient(loginName);
+        OkHttpClient currentClient = this.getCurrentClient(loginName, false);
         IssueResult result = client.postClient.postByFormDataResp2ObjFromJson(
                 this.getReqUrl(config.getApis().getCreateIssue()), params, IssueResult.class, currentClient);
         logWorkDomain.setIssueId(result.getCreatedIssueDetails().getId());
@@ -337,7 +337,7 @@ public class ReptileServiceImpl implements ReptileService {
                 .billableSeconds("").attributes(new Object()).build();
         String json = JSON.toJSONString(params, SerializerFeature.WriteMapNullValue);
         try {
-            OkHttpClient currentClient = this.getCurrentClient(loginName);
+            OkHttpClient currentClient = this.getCurrentClient(loginName, false);
             String logResult = client.postClient.postByJsonResp2String(this.getReqUrl(config.getApis().getLogWork()),
                     json, currentClient);
             log.info("log工时返回值：{}", logResult);
@@ -366,9 +366,14 @@ public class ReptileServiceImpl implements ReptileService {
         return new StringBuilder().append(config.getDomain()).append(apiUrl).toString();
     }
 
-    private synchronized OkHttpClient getCurrentClient(String loginName) {
+    private synchronized OkHttpClient getCurrentClient(String loginName, boolean force) {
         if (!USER_CLIENT_MAP.containsKey(loginName)) {
             USER_CLIENT_MAP.put(loginName, okHttpConfig.newClient());
+        } else {
+            if (force) {
+                USER_CLIENT_MAP.remove(loginName);
+                USER_CLIENT_MAP.put(loginName, okHttpConfig.newClient());
+            }
         }
         return USER_CLIENT_MAP.get(loginName);
     }
