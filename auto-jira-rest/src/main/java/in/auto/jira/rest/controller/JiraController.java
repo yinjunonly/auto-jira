@@ -2,6 +2,7 @@ package in.auto.jira.rest.controller;
 
 import java.io.UnsupportedEncodingException;
 
+import com.alibaba.fastjson.JSON;
 import com.google.common.base.Charsets;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +47,7 @@ public class JiraController {
 
 	@PostMapping("/issue/automation")
 	public Result<Void> automation(@RequestBody BusDomain busDomain) {
+		log.info("本次LOG工时请求参数：{}", JSON.toJSONString(busDomain));
 		try {
 			busDomain.setPassword(
 					new String(Base64Utils.decodeFromString(busDomain.getPassword()), Charsets.UTF_8.name()));
